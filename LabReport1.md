@@ -21,10 +21,14 @@ No arguments:
 ```
 cd lecture1/messages
 ```
-Here I used the cd command in the /home directory. I used the cd command to change the current working directory to the messages directory. The cd command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture/messages" allows me to change the working directory from /home to /messages. Because this command usage produces no error message or problematic behavior, it is not an error.
+Here I used the cd command in the /home directory. I used the cd command to change the current working directory from /home to the /messages directory. The cd command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture/messages" allows me to change the working directory from /home to /messages. Because this command usage produces no error message or problematic behavior, it is not an error.
+![Image](CSE15L-wk1-cd.png)  
 
 ---
 Path to file as argument:
 ```
-cd lecture1/messages/en-us.txt
-```  
+cd en-us.txt
+```
+In this example, I used the cd command in the messages directory. I attempted to use the cd command to change the working directory from /messages to the en-us.txt file. However, because cd requires directories as arguments, this usage produced an error. This is because the cd command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.
+
+---
