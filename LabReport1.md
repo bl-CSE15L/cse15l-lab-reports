@@ -1,6 +1,6 @@
 # **Week 1 - Markdown, URLs, and Paths (1/11/2024)**
 ---
-m
+This week I learned about various commands allowing me to traverse directories and files straight from my terminal.
 
 ---
 
