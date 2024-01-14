@@ -64,3 +64,32 @@ In this example, I used the ls command on the en-us.txt file while in the /messa
 ![Image](CSE15L-wk1-ls2.png)  
 
 ---
+### cat  
+The cat command 
+
+---
+No arguments:
+```
+cat  
+```
+I used the cd command in the /lecture1 directory. Using the command without passing any arguments resulted in the terminal printing the files and directories contained within /lecture1 such as Hello.java and the messages directory. Given that this output does not produce an error message or problematic behavior, it is not an error.  
+
+![Image](CSE15L-wk1-ls.png)  
+---
+Path to directory as argument:
+No arguments:
+```
+cat lecture1/messages
+```
+Here I used the cd command in the /home directory. I used the ls command to print a list of all the files in the /messages directory. The ls command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture1/messages" allows me to see all the files in /messages. Because this command usage produces no error message or problematic behavior, it is not an error.  
+
+![Image](CSE15L-wk1-ls1.png)  
+---
+Path to file as argument:
+```
+cat en-us.txt
+```
+In this example, I used the ls command on the en-us.txt file while in the /messages directory. The output of doing so was en-us.txt. Upon further experimentation, using ls on a file returns the file name if it exists in the current working directory; otherwise, it returns an error. As this is intended behavior and does not produce an error message, using ls in this way is not an error.
+
+![Image](CSE15L-wk1-ls2.png)  
+
