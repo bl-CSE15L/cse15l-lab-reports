@@ -59,7 +59,7 @@ Path to file as argument:
 ```
 ls en-us.txt
 ```
-In this example, I used the ls command on the en-us.txt file. I attempted to use the cd command to change the working directory from /messages to the en-us.txt file. However, because cd requires directories as arguments, this usage produced an error. This is because the cd command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.  
+In this example, I used the ls command on the en-us.txt file while in the /messages directory. The output of doing so was en-us.txt. Upon further experimentation, using ls on a file returns the file name if it exists in the current working directory; otherwise, it returns an error. As this is intended behavior and does not produce an error message, using ls in this way is not an error.
 
 ![Image](CSE15L-wk1-ls2.png)  
 
