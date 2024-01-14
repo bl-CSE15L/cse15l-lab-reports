@@ -13,22 +13,54 @@ No arguments:
 cd  
 ```
 I used the cd command in the /lecture1/messages directory. Using the command without passing any arguments resulted in no output from the terminal. However, using the pwd command showed it brought me to the /home directory. Upon further experimentation, using cd with no arguments changes the working directory to /home no matter what the current working directory is. Given that this output does not produce an error message or problematic behavior, it is not an error.  
-![Image](CSE15L-wk1-cd.png)  
 
+![Image](CSE15L-wk1-cd.png)  
 ---
 Path to directory as argument:
 No arguments:
 ```
 cd lecture1/messages
 ```
-Here I used the cd command in the /home directory. I used the cd command to change the current working directory from /home to the /messages directory. The cd command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture/messages" allows me to change the working directory from /home to /messages. This change is reflected in the prompt message of the output line. Because this command usage produces no error message or problematic behavior, it is not an error.
-![Image](CSE15L-wk1-cd1.png)  
+Here I used the cd command in the /home directory. I used the cd command to change the current working directory from /home to the /messages directory. The cd command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture/messages" allows me to change the working directory from /home to /messages. This change is reflected in the prompt message of the output line. Because this command usage produces no error message or problematic behavior, it is not an error.  
 
+![Image](CSE15L-wk1-cd1.png)  
 ---
 Path to file as argument:
 ```
 cd en-us.txt
 ```
-In this example, I used the cd command in the messages directory. I attempted to use the cd command to change the working directory from /messages to the en-us.txt file. However, because cd requires directories as arguments, this usage produced an error. This is because the cd command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.
+In this example, I used the cd command in the messages directory. I attempted to use the cd command to change the working directory from /messages to the en-us.txt file. However, because cd requires directories as arguments, this usage produced an error. This is because the cd command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.  
+
+![Image](CSE15L-wk1-cd2.png)  
+
+---
+### ls  
+The ls command lists files and directories contained within the working directory.
+
+---
+No arguments:
+```
+ls  
+```
+I used the cd command in the /lecture1 directory. Using the command without passing any arguments resulted in the terminal printing the files and directories contained within /lecture1 such as Hello.java and the messages directory. Given that this output does not produce an error message or problematic behavior, it is not an error.  
+
+![Image](CSE15L-wk1-ls.png)  
+---
+Path to directory as argument:
+No arguments:
+```
+ls lecture1/messages
+```
+Here I used the cd command in the /home directory. I used the cd command to change the current working directory from /home to the /messages directory. The cd command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture/messages" allows me to change the working directory from /home to /messages. This change is reflected in the prompt message of the output line. Because this command usage produces no error message or problematic behavior, it is not an error.  
+
+![Image](CSE15L-wk1-ls1.png)  
+---
+Path to file as argument:
+```
+ls en-us.txt
+```
+In this example, I used the ls command on the en-us.txt file. I attempted to use the cd command to change the working directory from /messages to the en-us.txt file. However, because cd requires directories as arguments, this usage produced an error. This is because the cd command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.  
+
+![Image](CSE15L-wk1-ls2.png)  
 
 ---
