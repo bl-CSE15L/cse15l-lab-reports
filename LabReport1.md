@@ -65,16 +65,15 @@ In this example, I used the ls command on the en-us.txt file while in the /messa
 
 ---
 ### cat  
-The cat command 
+The cat command prints and concatenates file contents.
 
 ---
 No arguments:
 ```
 cat  
 ```
-I used the cd command in the /lecture1 directory. Using the command without passing any arguments resulted in the terminal printing the files and directories contained within /lecture1 such as Hello.java and the messages directory. Given that this output does not produce an error message or problematic behavior, it is not an error.  
-
-![Image](CSE15L-wk1-ls.png)  
+I used the cd command in the /home directory. Using the command without passing any arguments resulted in the command printing my inputs. This is because it prints file contents but because no file was specified it prints out whatever I put in the terminal. This is indicated by a lack of prompt in further terminal inputs. Because there is no problematic behavior or error message, this is not an error as this usage has been accounted for.
+![Image](CSE15L-wk1-cat.png)  
 ---
 Path to directory as argument:
 No arguments:
