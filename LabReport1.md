@@ -72,7 +72,8 @@ No arguments:
 ```
 cat  
 ```
-I used the cd command in the /home directory. Using the command without passing any arguments resulted in the command printing my inputs. This is because it prints file contents but because no file was specified it prints out whatever I put in the terminal. This is indicated by a lack of prompt in further terminal inputs. Because there is no problematic behavior or error message, this is not an error as this usage has been accounted for.
+I used the cd command in the /home directory. Using the command without passing any arguments resulted in the command printing my inputs. This is because it prints file contents but because no file was specified it prints out whatever I put in the terminal. This is indicated by a lack of prompt in further terminal inputs. Because there is no problematic behavior or error message, this is not an error as this usage has been accounted for.  
+
 ![Image](CSE15L-wk1-cat.png)  
 ---
 Path to directory as argument:
@@ -80,9 +81,9 @@ No arguments:
 ```
 cat lecture1/messages
 ```
-Here I used the cd command in the /home directory. I used the ls command to print a list of all the files in the /messages directory. The ls command only has access to whatever is in the working directory. As such, making the arg a path that goes from /home through /lecture1 to /messages as "lecture1/messages" allows me to see all the files in /messages. Because this command usage produces no error message or problematic behavior, it is not an error.  
+Here I used the cd command in the /lecture1 directory. I attempted to use the cat command to print the contents of the /messages directory. The cat command only works on files within the current working directory, therefore the command returns an error message because /messages is a directory and not a file. As such, this usage results in an error. 
 
-![Image](CSE15L-wk1-ls1.png)  
+![Image](CSE15L-wk1-cat1.png)  
 ---
 Path to file as argument:
 ```
@@ -90,5 +91,5 @@ cat en-us.txt
 ```
 In this example, I used the ls command on the en-us.txt file while in the /messages directory. The output of doing so was en-us.txt. Upon further experimentation, using ls on a file returns the file name if it exists in the current working directory; otherwise, it returns an error. As this is intended behavior and does not produce an error message, using ls in this way is not an error.
 
-![Image](CSE15L-wk1-ls2.png)  
+![Image](CSE15L-wk1-cat2.png)  
 
