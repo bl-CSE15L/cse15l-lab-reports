@@ -8,7 +8,7 @@ This week I learned about various commands allowing me to traverse directories a
 The cd command changes the working directory.
 
 ---
-No arguments:
+#### No arguments:
 ```
 cd  
 ```
@@ -16,8 +16,7 @@ I used the cd command in the /lecture1/messages directory. Using the command wit
 
 ![Image](CSE15L-wk1-cd.png)  
 ---
-Path to directory as argument:
-No arguments:
+#### Path to directory as argument:
 ```
 cd lecture1/messages
 ```
@@ -25,7 +24,7 @@ Here I used the cd command in the /home directory. I used the cd command to chan
 
 ![Image](CSE15L-wk1-cd1.png)  
 ---
-Path to file as argument:
+#### Path to file as argument:
 ```
 cd en-us.txt
 ```
@@ -38,7 +37,7 @@ In this example, I used the cd command in the messages directory. I attempted to
 The ls command lists files and directories contained within the working directory.
 
 ---
-No arguments:
+#### No arguments:
 ```
 ls  
 ```
@@ -46,8 +45,7 @@ I used the cd command in the /lecture1 directory. Using the command without pass
 
 ![Image](CSE15L-wk1-ls.png)  
 ---
-Path to directory as argument:
-No arguments:
+#### Path to directory as argument:
 ```
 ls lecture1/messages
 ```
@@ -55,7 +53,7 @@ Here I used the cd command in the /home directory. I used the ls command to prin
 
 ![Image](CSE15L-wk1-ls1.png)  
 ---
-Path to file as argument:
+#### Path to file as argument:
 ```
 ls en-us.txt
 ```
@@ -68,7 +66,7 @@ In this example, I used the ls command on the en-us.txt file while in the /messa
 The cat command prints and concatenates file contents.
 
 ---
-No arguments:
+#### No arguments:
 ```
 cat  
 ```
@@ -76,8 +74,7 @@ I used the cd command in the /home directory. Using the command without passing 
 
 ![Image](CSE15L-wk1-cat.png)  
 ---
-Path to directory as argument:
-No arguments:
+#### Path to directory as argument:
 ```
 cat lecture1/messages
 ```
@@ -85,7 +82,7 @@ Here I used the cd command in the /lecture1 directory. I attempted to use the ca
 
 ![Image](CSE15L-wk1-cat1.png)  
 ---
-Path to file as argument:
+#### Path to file as argument:
 ```
 cat en-us.txt
 ```
