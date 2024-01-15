@@ -89,7 +89,7 @@ Path to file as argument:
 ```
 cat en-us.txt
 ```
-In this example, I used the ls command on the en-us.txt file while in the /messages directory. The output of doing so was en-us.txt. Upon further experimentation, using ls on a file returns the file name if it exists in the current working directory; otherwise, it returns an error. As this is intended behavior and does not produce an error message, using ls in this way is not an error.
+In this example, I used the cat command on the ja.txt file while in the /messages directory. The output of doing so was the text contained in ja.txt. Upon further experimentation, using cat with multiple file names as args returns prints the contents of each file if it exists in the working directory. As this is intended behavior and does not produce an error message, using cat in this way is not an error.
 
 ![Image](CSE15L-wk1-cat2.png)  
 
