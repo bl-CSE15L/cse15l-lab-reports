@@ -4,7 +4,7 @@ In this lab report, I reflect on my learning about connecting to a remote system
 ---
 
 ## Chat Server:   
-ChatServer.java - My personal implementation using a String variable to store messages
+ChatServer.java - My personal implementation using a String variable to store messages   
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -55,3 +55,7 @@ The argument passed into ```handleRequest``` is the URL of the web server with t
 The field that gets changed is ```chatLogs``` as it concatenates all the messages since the server started. In this screenshot, it concatenates the previous message from jpolitz and yash.
 
 ---
+## SSH Key:   
+
+### Private Key   
+![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/17509e89-ae81-471d-94cd-e4200cf00af1)
