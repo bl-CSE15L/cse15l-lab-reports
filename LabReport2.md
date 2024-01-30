@@ -72,4 +72,6 @@ Here I don't need to use a password to login to ```ieng6```
 ---
 
 ## What I Learned
-Throughout these past 2 weeks, I found it really exciting to learn how to program my own web server and host it remotely. I learned that changes saved locally are not saved remotely and vice versa and I also learned how to navigate across both systems within my terminal. Additionally, this experience has helped me visualize how directories and files interact with one another when trying to access them.
+Throughout these past 2 weeks, I found it really exciting to learn how to program my own web server and host it remotely. I learned that changes saved locally are not saved remotely and vice versa and I also learned how to navigate across both systems within my terminal. Additionally, this experience has helped me visualize how directories and files interact with one another when trying to access them.   
+
+---
