@@ -58,4 +58,18 @@ The field that gets changed is ```chatLogs``` as it concatenates all the message
 ## SSH Key:   
 
 ### Private Key   
-![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/17509e89-ae81-471d-94cd-e4200cf00af1)
+My private key for ``ieng6``` is in ```/c/Users/jedix/.ssh/id_rsa```   
+![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/af5adf62-b61d-4aee-b727-18657a07f5c9)
+
+### Public Key   
+My Public key for ``ieng6``` is in ```/home/linux/ieng6/oce/7g/blappay/.ssh/authorized_keys```   
+![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/0512beb1-ee1b-414f-a4c9-0c8c92d9cc5e)
+
+### Logging In
+Here I don't need to use a password to login to ```ieng6```   
+![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/3d392c13-98f6-416a-bc71-8e4a1b18be69)
+
+---
+
+## What I Learned
+Throughout these past 2 weeks, I found it really exciting to learn how to program my own web server and host it remotely. I learned that changes saved locally are not saved remotely and vice versa and I also learned how to navigate across both systems within my terminal. Additionally, this experience has helped me visualize how directories and files interact with one another when trying to access them.
