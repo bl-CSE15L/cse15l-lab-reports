@@ -1,2 +1,3 @@
 # **CSE 15L - Lab Reports**
-[Week 1 - Markdown, URLs, and Paths (1/11/2024)](/cse15l-lab-reports/week1)
+[Lab Report 1 - Remote Access and FileSystem](/cse15l-lab-reports/week1)
+[Lab Report 2 - Servers and SSH Keys](/cse15l-lab-reports/LabReport2)
