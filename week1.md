@@ -78,7 +78,7 @@ I used the ```cat``` command in the ```/home``` directory. Using the command wit
 ```
 cat lecture1/messages
 ```
-Here I used the ```cat``` command in the ```/lecture1``` directory. I attempted to use the '''cat''' command to print the contents of the ```/home/lecture1/messages``` directory. The ```cat``` command only works on files within the current working directory, therefore the command returns an error message because ```/home/lecture1/messages``` is a directory and not a file. As such, this usage results in an error. 
+Here I used the ```cat``` command in the ```/home``` directory. I attempted to use the '''cat''' command to print the contents of the ```/home/lecture1/messages``` directory. The ```cat``` command only works on files within the current working directory, therefore the command returns an error message because ```/home/lecture1/messages``` is a directory and not a file. As such, this usage results in an error. 
 
 ![Image](cse15l-wk1-imgs/CSE15L-wk1-cat1.png)  
 ---
