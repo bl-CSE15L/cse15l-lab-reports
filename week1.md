@@ -28,7 +28,7 @@ Here I used the ```cd``` command in the ```/home``` directory. I used the ```cd`
 ```
 cd en-us.txt
 ```
-In this example, I used the ```cd``` command in the messages directory. I attempted to use the ```cd``` command to change the working directory from ```/messages``` to the ```en-us.txt``` file. However, because ```cd``` requires directories as arguments, this usage produced an error. This is because the ```cd``` command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.  
+In this example, I used the ```cd``` command in the ```/messages``` directory. I attempted to use the ```cd``` command to change the working directory from ```/messages``` to the ```en-us.txt``` file. However, because ```cd``` requires directories as arguments, this usage produced an error. This is because the ```cd``` command cannot accept paths to files as arguments as files are different from directories and the command expects directories as the argument.  
 
 ![Image](cse15l-wk1-imgs/CSE15L-wk1-cd2.png)  
 
