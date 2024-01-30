@@ -78,7 +78,7 @@ I used the ```cat``` command in the ```/home``` directory. Using the command wit
 ```
 cat lecture1/messages
 ```
-Here I used the ```cat``` command in the ```/home``` directory. I attempted to use the '''cat''' command to print the contents of the ```/home/lecture1/messages``` directory. The ```cat``` command only works on files within the current working directory, therefore the command returns an error message because ```/home/lecture1/messages``` is a directory and not a file. As such, this usage results in an error. 
+Here I used the ```cat``` command in the ```/home``` directory. I attempted to use the ```cat``` command to print the contents of the ```/home/lecture1/messages``` directory. The ```cat``` command only works on files within the current working directory, therefore the command returns an error message because ```/home/lecture1/messages``` is a directory and not a file. As such, this usage results in an error. 
 
 ![Image](cse15l-wk1-imgs/CSE15L-wk1-cat1.png)  
 ---
@@ -86,7 +86,7 @@ Here I used the ```cat``` command in the ```/home``` directory. I attempted to u
 ```
 cat en-us.txt
 ```
-In this example, I used the ```cat``` command on the ```ja.txt``` file while in the ```/home/lecture1/messages``` directory. The output of doing so was the text contained in ```ja.txt```. Upon further experimentation, using cat with multiple file names as args returns prints the contents of each file if it exists in the working directory. As this is intended behavior and does not produce an error message, using ```cat``` in this way is not an error.
+In this example, I used the ```cat``` command on the ```ja.txt``` file while in the ```/home/lecture1/messages``` directory. The output of doing so was the text contained in ```ja.txt```. Upon further experimentation, using ```cat``` with multiple file names as args returns prints the contents of each file if it exists in the working directory. As this is intended behavior and does not produce an error message, using ```cat``` in this way is not an error.
 
 ![Image](cse15l-wk1-imgs/CSE15L-wk1-cat2.png)  
 
