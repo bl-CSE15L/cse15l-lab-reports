@@ -4,7 +4,7 @@ In this lab report, I reflect on my learning about connecting to a remote system
 ---
 
 ## Chat Server:   
-ChatServer.java - My personal implementation using a String variable to store messages.
+ChatServer.java - My personal implementation using a String variable to store messages
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -41,69 +41,17 @@ class ChatServer {
 }
 
 ```
-Server.java - Pulled from the given wavelet code.
-```
-// A simple web server using Java's built-in HttpServer
 
-// Examples from https://dzone.com/articles/simple-http-server-in-java were useful references
-
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.InetSocketAddress;
-import java.net.URI;
-
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpServer;
-
-interface URLHandler {
-    String handleRequest(URI url);
-}
-
-class ServerHttpHandler implements HttpHandler {
-    URLHandler handler;
-    ServerHttpHandler(URLHandler handler) {
-      this.handler = handler;
-    }
-    public void handle(final HttpExchange exchange) throws IOException {
-        // form return body after being handled by program
-        try {
-            String ret = handler.handleRequest(exchange.getRequestURI());
-            // form the return string and write it on the browser
-            exchange.sendResponseHeaders(200, ret.getBytes().length);
-            OutputStream os = exchange.getResponseBody();
-            os.write(ret.getBytes());
-            os.close();
-        } catch(Exception e) {
-            String response = e.toString();
-            exchange.sendResponseHeaders(500, response.getBytes().length);
-            OutputStream os = exchange.getResponseBody();
-            os.write(response.getBytes());
-            os.close();
-        }
-    }
-}
-
-public class Server {
-    public static void start(int port, URLHandler handler) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-
-        //create request entrypoint
-        server.createContext("/", new ServerHttpHandler(handler));
-
-        //start the server
-        server.start();
-        System.out.println("Server Started!");
-    }
-}
-```
----  
 ### /add-message - Example 1   
 ![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/34421475-bfa2-4fd7-b461-54803c002da6)   
-ttt   
+In this screenshot, the ```handleRequest``` method was called. The ```handleRequest``` method also calls on ```equals()```, ```getQuery()```, and ```.split()``` to parse all the needed ```String```s from the URL. The main method is called when the server is started and uses ```parseInt()``` for the port and ```start()``` to start the server.   
+The argument passed into ```handleRequest``` is the URL of the web server with the ```/add-message``` path stored as a ```URI``` parameter. This ```URI``` is then broken down through the subsequent methods to get the Strings ```messageString``` and ```userString``` which then get displayed through their concatenation in the field ```chatLogs``` which is an initially empty ```String```.
+The field that gets changed is ```chatLogs``` as it is the ```String``` variable that records all the messages and is the variable that is displayed and returned. This variable gets updated every time a new message is added and starts empty when the server starts.   
 
-### /add-message - Example 2
+### /add-message - Example 2   
 ![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/1fd3cd1d-d197-4534-8aec-969f9b385aa1)   
-ttt
+In this screenshot, the ```handleRequest``` method is also called. The ```handleRequest``` method calls on ```equals()```, ```getQuery()```, and ```.split()``` like last time to parse all the needed ```String```s from the URL.  
+The argument passed into ```handleRequest``` is the URL of the web server with the ```/add-message``` path. This URL is again broken down through the subsequent methods to get new ```messageString``` and ```userString``` ```String```s which get concatenated in ```chatLogs``` with all the previous messages and displayed.
+The field that gets changed is ```chatLogs``` as it concatenates all the messages since the server started. In this screenshot, it concatenates the previous message from jpolitz and yash.
 
 ---
