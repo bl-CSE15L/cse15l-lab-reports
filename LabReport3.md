@@ -1,4 +1,4 @@
-# **Lab Report 2 - Servers and SSH Keys**   
+# **Lab Report 3 - Bugs and Commands**   
 In this lab report, I reflect on my learning debugging and testing using JUnit and using various commands to get all kinds of information on repositories.   
 
 ---   
