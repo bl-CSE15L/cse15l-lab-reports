@@ -62,4 +62,8 @@ public class ArrayExamples {
 }
 ```
 ### Explanation:   
-The original code modifies the array while it is also being accessed, causing it to reverse elements already reversed. The fix I implemented creates a shallow copy of the parameter array which the new returned array can access to reverse its elements.
+The original code modifies the array while it is also being accessed, causing it to reverse elements already reversed. The fix I implemented creates a shallow copy of the parameter array which the new returned array can access to reverse its elements.   
+
+---
+
+## Researching Commands:   
