@@ -20,7 +20,7 @@ git clone https://github.com/bl-CSE15L/lab7 <enter>
 ```   
 ## Running Tests w/ Failures:   
 ![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/c783a64b-1f14-4c1f-98fc-6fe2986058b0)   
-Here I run the ```test.sh``` file to test the program revealing bugs. I used ```cd``` and ```ls``` to find and run the testing file.   
+Here I run the ```test.sh``` file to test the program revealing bugs. I used ```cd``` to change into the correct working directory and ```ls``` to confirm the file is there. I run the file using ```bash```.  
 ### Keys & Commands:   
 ```
 cd lab7/ <enter>
@@ -47,7 +47,7 @@ Here I run the ```test.sh``` file once more after fixing the bug showing all my 
 ```
 ## Commiting & Pushing to Git
 ![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/6aff8105-aba1-4c79-97d9-0f79fd3a691e)   
-Here I used ```git``` commands to save my changes to my repository.
+Here I used ```git``` commands to save my changes to my repository. ```-a``` selects to push all the files I modified while ```-m``` adds the commit message. ```origin main``` pushes my changes on to the main branch timeline of my forked repository.
 ```
 git commit -a -m "lab report" <enter>
 git push origin main <enter>
