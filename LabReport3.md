@@ -12,30 +12,30 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ArrayTests {
-  @Test 
-	public void testReverseInPlaceLen3() {
-    int[] input = {0, 1, 2};
-    ArrayExamples.reverseInPlace(input);
-    assertArrayEquals(new int[]{2, 1, 0}, input);
-	}
+  @Test
+  public void testReverseInPlaceLen3() {
+    int[] input1 = { 0, 1, 2 };
+    assertArrayEquals(new int[]{ 2, 1, 0}, ArrayExamples.reversed(input1));
+  }
 }
+
 ```
 ### Non-Failure-Inducing Input:   
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
 
-public class ArrayTests { 
-	@Test 
-	public void testReverseInPlace() {
+public class ArrayTests {
+  @Test 
+  public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}
+  }
 }
-```   
+``` 
 ### Symptom:
-![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/a82566e6-7fb7-4ff4-87be-109bf8c92bbe)   
+![image](https://github.com/bl-CSE15L/cse15l-lab-reports/assets/156377155/25cd6c08-ea1d-4888-9ffb-3bf9dd5e7ea3)   
 ### Debugging:   
 Before:   
 ```
@@ -51,12 +51,11 @@ After:
 ```
 public class ArrayExamples {
   static void reverseInPlace(int[] arr) {
-    int[] shallow = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      shallow[i] = arr[i];
-    }
-    for(int i = 0; i < shallow.length; i += 1) {
-      arr[i] = shallow[shallow.length - i - 1];
+    int length = arr.length;
+    for(int i = 0; i < length / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[length - i - 1];
+        arr[length - i - 1] = temp;
     }
   }
 }
