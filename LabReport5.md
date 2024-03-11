@@ -1,4 +1,4 @@
-# **Lab Report 5 - Putting It All Together**   
+# **Lab Report 5 - Putting it All Together**   
 In this lab report, I reflect on my learning throughout the quarter by creating a debugging scenario.
 
 ---   
